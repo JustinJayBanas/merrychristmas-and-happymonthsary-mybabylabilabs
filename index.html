@@ -27,10 +27,9 @@
             background-attachment: fixed;
         }
 
-       <iframe src="https://www.youtube.com/embed/LUjn3RpkcKY?autoplay=1&loop=1&playlist=LUjn3RpkcKY&mute=0&volume=30&controls=0&rel=0&modestbranding=1" 
-        allow="autoplay; encrypted-media" 
-        style="position:absolute; width:0; height:0; border:0;" 
-        allowfullscreen></iframe>
+        #intro {
+            background: url('https://i.postimg.cc/rFFxGG2f/470745f5-a115-489b-a791-18eb2064b6dc.jpg') no-repeat center center;
+        }
 
         #message {
             background: url('https://png.pngtree.com/background/20250217/original/pngtree-snowy-escape-couple-holding-hands-under-a-starry-sky-winter-love-picture-image_15972892.jpg') no-repeat center center;
@@ -192,12 +191,7 @@
 </head>
 <body>
 
-  <!-- Background music: Local Mistletoe MP3 (autoplay + loop, hidden) -->
-<audio autoplay loop style="display:none;">
-    <source src="mistletoe.mp3" type="audio/mpeg">  <!-- If in root folder -->
-    <!-- Or if in a 'music' folder: src="music/mistletoe.mp3" -->
-    Your browser does not support the audio element.
-</audio>
+  
 
     <section id="intro">
         <div class="overlay"></div>
@@ -295,7 +289,7 @@
         }
 
         function nextSlide() {
-            showSlide(slideIndex + 1);
+            showSlide(slideIndex + 1);  
         }
 
         // Auto slide
@@ -306,6 +300,4 @@
     </script>
 
 </body>
-
 </html>
-
