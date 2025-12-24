@@ -187,11 +187,30 @@
             background: #ff69b4;
             border-radius: 10px;
         }
+
+        /* Hidden YouTube player for background music */
+        #yt-player {
+            position: fixed;
+            top: -100px;
+            left: -100px;
+            width: 1px;
+            height: 1px;
+            opacity: 0;
+            pointer-events: none;
+            z-index: -1;
+        }
     </style>
 </head>
 <body>
 
-  
+    <!-- Hidden YouTube embed for autoplay background music -->
+    <iframe 
+        id="yt-player"
+        src="https://www.youtube.com/embed/MvNX5X-Dxbo?autoplay=1&loop=1&playlist=MvNX5X-Dxbo&controls=0&showinfo=0&modestbranding=1&rel=0"
+        frameborder="0" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+    </iframe>
 
     <section id="intro">
         <div class="overlay"></div>
