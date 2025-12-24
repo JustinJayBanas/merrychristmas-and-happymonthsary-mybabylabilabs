@@ -192,11 +192,12 @@
 </head>
 <body>
 
-    <!-- Hidden background music (romantic Christmas playlist) -->
-    <iframe src="https://www.youtube.com/embed/d1Qr7ENEQrQ?autoplay=1&loop=1&playlist=d1Qr7ENEQrQ&mute=0&volume=30&controls=0&rel=0&modestbranding=1" 
-            allow="autoplay; encrypted-media" 
-            style="position:absolute; width:0; height:0; border:0;" 
-            allowfullscreen></iframe>
+  <!-- Background music: Local Mistletoe MP3 (autoplay + loop, hidden) -->
+<audio autoplay loop style="display:none;">
+    <source src="mistletoe.mp3" type="audio/mpeg">  <!-- If in root folder -->
+    <!-- Or if in a 'music' folder: src="music/mistletoe.mp3" -->
+    Your browser does not support the audio element.
+</audio>
 
     <section id="intro">
         <div class="overlay"></div>
@@ -307,3 +308,4 @@
 </body>
 
 </html>
+
